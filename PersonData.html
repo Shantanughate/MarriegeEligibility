@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Marriage Eligibility</title>
+
+<style>
+    body {
+        background: linear-gradient(to right, #f3e7e9, #e3eeff);
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 350px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 6px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    input[type="radio"] {
+        margin-top: 10px;
+        margin-right: 6px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+</head>
+<body>
+
+	<form action="validation" method="post">
+	<lable>Name : </lable>
+	<input type="text" name="name"><br><br>
+	<lable>Age : </lable>
+	<input type="number" name="age"><br><br>
+	<lable>Country : </lable>
+	<input type="text" name="country"><br><br>
+	<lable>Adhar Number : </lable>
+	<input type="text" name="adhar"><br><br>
+	<lable>Gender</lable><br>
+	<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="female">Female
+	<br><br>
+	<button type="submit">Submit</button>
+		
+	</form>
+
+</body>
+</html>
